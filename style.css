@@ -14,7 +14,6 @@
 .calculator{
     width: 100%;
     max-width: 600px;
-    margin-left: 10%;
     margin-top: 10%;
 }
 .calculator h1{
@@ -80,4 +79,14 @@ p{
 @keyframes loading {
     0% { width: 0%; }
     100% { width: 100%; }
+}
+
+@media (max-width: 600px){
+   .container h1{
+        font-size: 40px;
+    }
+    .container p{
+        font-size: 17px;
+    }
+
 }
