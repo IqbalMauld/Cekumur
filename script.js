@@ -1,5 +1,6 @@
 function calculateAge() {
     const birthdateInput = document.getElementById('date').value;
+    const nameInput = document.getElementById('name').value;
     document.getElementById('result').innerText = '';
     document.querySelector('.loading-bar').style.display = 'block';
     
@@ -7,6 +8,10 @@ function calculateAge() {
         
         if (!birthdateInput) {
             document.getElementById('result').innerText = "Silakan masukkan tanggal lahir.";
+            return;
+        }
+        if (!nameInput) {
+            document.getElementById('result').innerText = "Silakan masukkan Nama kamu.";
             return;
         }
         
@@ -32,7 +37,7 @@ function calculateAge() {
         }
         
         // Menampilkan hasil
-        document.getElementById('result').innerText = `Umur Kamu adalah ${ageYears} tahun, ${ageMonths} bulan, dan ${ageDays} hari.`;
+        document.getElementById('result').innerText = ` Hallo ${nameInput}, Umur Kamu adalah ${ageYears} tahun, ${ageMonths} bulan, dan ${ageDays} hari.`;
         document.querySelector('.loading-bar').style.display = 'none';
     }, 2500);
     
