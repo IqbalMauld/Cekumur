@@ -38,7 +38,7 @@ function calculateAge() {
         }
         
         // Menampilkan hasil
-        document.getElementById('result').innerText = ` Hallo ${nameInput}, ${cekInput} Kamu adalah ${ageYears} tahun, ${ageMonths} bulan, dan ${ageDays} hari.`;
+        document.getElementById('result').innerText = ` Hallo ${nameInput}, ${cekInput} Kamu sudah ${ageYears} tahun, ${ageMonths} bulan, dan ${ageDays} hari.`;
         document.querySelector('.loading-bar').style.display = 'none';
     }, 2500);
     
