@@ -1,6 +1,7 @@
 function calculateAge() {
     const birthdateInput = document.getElementById('date').value;
     const nameInput = document.getElementById('name').value;
+    const cekInput = document.getElementById('cek').value;
     document.getElementById('result').innerText = '';
     document.querySelector('.loading-bar').style.display = 'block';
     
@@ -37,7 +38,7 @@ function calculateAge() {
         }
         
         // Menampilkan hasil
-        document.getElementById('result').innerText = ` Hallo ${nameInput}, Umur Kamu adalah ${ageYears} tahun, ${ageMonths} bulan, dan ${ageDays} hari.`;
+        document.getElementById('result').innerText = ` Hallo ${nameInput}, ${cekInput} Kamu adalah ${ageYears} tahun, ${ageMonths} bulan, dan ${ageDays} hari.`;
         document.querySelector('.loading-bar').style.display = 'none';
     }, 2500);
     
